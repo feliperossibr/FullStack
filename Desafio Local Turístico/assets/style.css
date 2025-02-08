@@ -1,0 +1,33 @@
+* {
+    font-family: "Open Sans", serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 80vw;
+}
+
+headline {
+    font-weight: bold;
+    color: #E1624F;
+}
+
+h1 {
+    
+}
+
+#page {
+    box-sizing: border-box;
+    width: 800px;
+    padding: 24px;
+    margin: 48px auto;
+}
+
+img {
+    border-radius: 28px;
+}
+
+.description{
+    text-align: center;
+}

@@ -1,0 +1,8 @@
+.grid {
+    display: grid;
+}
+
+#bg-intro {
+    max-width: 1366px;
+    max-height: 750px;
+}

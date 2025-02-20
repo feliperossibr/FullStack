@@ -1,8 +1,15 @@
 .grid {
     display: grid;
+    justify-content: center;
+    
 }
 
-#bg-intro {
-    max-width: 1366px;
-    max-height: 750px;
+#intro {
+    width: 98.9vw;
+    height: 750px;
+    background-image: url(../assets/Background_Intro.png);
+}
+
+.grid-flow-col {
+    grid-auto-flow: column;
 }

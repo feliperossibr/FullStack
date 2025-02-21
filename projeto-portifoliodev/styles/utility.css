@@ -13,3 +13,21 @@
 .grid-flow-col {
     grid-auto-flow: column;
 }
+
+.gap-24 {
+    gap: 24px;
+}
+
+.card {
+    overflow: hidden;
+    position: relative;
+    background-color: var(--color-gray-300);
+    width: 330px;
+    height: 280px;
+    border-radius: 12px;
+}
+
+.image-card {
+    width: 306px;
+    height: 156px;
+}

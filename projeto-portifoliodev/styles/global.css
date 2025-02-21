@@ -1,4 +1,5 @@
 * {
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -135,4 +136,32 @@ h3 {
     #node-color {
         background-color: var(--principal-color-green);
     }
+}
+
+#caretdoubledown {
+    margin-top: 0;
+    background-color: var(--color-gray-200);
+    color: var(--color-gray-400);
+    text-align: center;
+}
+
+main {
+    background-color: var(--color-gray-200);
+}
+
+#title-md {
+    color: var(--color-gray-600);
+    font: var(--text-md);
+}
+
+#projects {
+    padding-top: 56px;
+    width: 1366px;
+    height: 917px;
+}
+
+#content-card {
+    width: 1040px;
+    height: 584px;
+    grid-template-columns: 1fr 1fr 1fr ;
 }

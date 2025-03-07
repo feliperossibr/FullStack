@@ -15,29 +15,31 @@
 
     <title>Convert</title>
 </head>
-<body>
-    <img src="logo.svg" alt="Convert logo">
+    <body>
+        <img src="logo.svg" alt="Convert logo">
 
-    <main>
-        <form>
-            <label for="amount">valor</label>
-            <input type="text" name="amount" id="amount" placeholder="0" required />
+        <main>
+            <form>
+                <label for="amount">valor</label>
+                <input type="text" name="amount" id="amount" placeholder="0" required />
 
-            <label for="currency">moeda</label>
-            <select name="currency" id="currency" required>
-                <option value="" disabled selected hidden>Selecione a moeda</option>
-                <option value="USD">Dólar Americano</option>
-                <option value="EUR">Euro</option>
-                <option value="GBP">Libra Esterlina</option>
-            </select>
+                <label for="currency">moeda</label>
+                <select name="currency" id="currency" required>
+                    <option value="" disabled selected hidden>Selecione a moeda</option>
+                    <option value="USD">Dólar Americano</option>
+                    <option value="EUR">Euro</option>
+                    <option value="GBP">Libra Esterlina</option>
+                </select>
 
-            <button type="submit">Converter em reais</button>
-        </form>
+                <button type="submit">Converter em reais</button>
+            </form>
 
-        <footer>
-            <span id="description">US$ 1 = R$ 4,86</span>
-            <h1 id="result">486,00 reais</h1>
-        </footer>
-    </main>
-</body>
+            <footer>
+                <span id="description">US$ 1 = R$ 4,86</span>
+                <h1 id="result">486,00 reais</h1>
+            </footer>
+        </main>
+
+    <script src="script/scripts.js"></script>
+    </body>
 </html>

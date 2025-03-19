@@ -1,54 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="assets/icon.png">
     <title>Local Turístico</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="background">
-        <section class="title">
-            <tittle>
-                <headline>SUA PRÓXIMA VIAGEM :</headline>
-                <h1>Conheça Busan</h1>
-            </tittle>
-        
-            <div id="apresentation">
-                <img src="assets/capa-img.jpg" alt="porto de busan, com ponte estaiada">
-                <p class="description">
-                    Busan, a estrela em ascensão da Coreia do Sul, oferece de tudo, desde churrascarias de primeira linha até tradicionais barracas de comida de rua. Aqui, <br> exploramos a segunda cidade da Coreia do Sul e descobrimos as suas ofertas culinárias.
-                </p>
-            </div> 
-                
-        </section> 
-        <section class="page">
-            <div class="travel">
-                <tittle>
-                    <headline>PARA OS AMANTES DE HISTÓRIA</headline>
-                    <h2>Descubra 3 destinos imperdíveis em Busan</h2>
-                </tittle>
-                <p class="text">
-                    As atrações de Busan vão desde templos budistas centenários que pontilham as montanhas e o litoral da cidade até praias imaculadas com águas <br> 
-                    cristalinas. Esta cidade litorânea tem muitas coisas para fazer o ano todo - as famílias podem passar o tempo em um aquário à beira-mar, os <br>
-                     compradores podem explorar bairros vibrantes e os amantes da natureza podem desfrutar de longas caminhadas até mirantes panorâmicos. <br>
-                    Os santuários budistas que pontilham a costa e as montanhas de Busan têm uma arquitetura impressionante que irá encantar os fotógrafos.
-                </p>
-                <img src="assets/card-travel-1.jpg" alt="templo de haedong yonggungsa">
-                <h3>1. Templo Haedong Yonggungsa</h3>
-                <p class="text">
-                    O Templo Haedong Yonggungsa é um templo budista localizado no extremo nordeste de Busan. Construído em 1376, é um dos poucos templos na <br> Coreia construídos à beira-mar – você pode desfrutar de vistas do Mar do Leste de um lado e de belas montanhas do outro.
-                </p>
-                <p class="list">
-                    Bom para: 
-                </p>
-            </div class="travel">
+    <main>
+        <section id="next-trip">
+            <span>Sua próxima viagem:</span>
+            <h1>Conheça Busan</h1>
+
+            <img src="assets/conheca-busan.jpg" alt="Vista panorâmica noturna de Busan, Coreia do Sul, com a ponte Gwangandaegyo iluminada ao fundo, refletindo suas luzes sobre a água. Em primeiro plano, está o Lotte Mall e edifícios ao redor, com diversas luzes destacando a vida urbana da cidade.">
+
+            <p>
+                Busan, a estrela em ascensão da Coreia do Sul, oferece de tudo, desde churrascarias de primeira linha até tradicionais barracas de comida de rua. Aqui, exploramos a segunda cidade da Coreia do Sul e descobrimos as suas ofertas culinárias.
+            </p>
         </section>
-        
-    
-    </div>
+
+        <section id="destinations">
+            <span>Para os amantes de história</span>
+            <h2>Descubra 3 destinos imperdíveis em Busan</h2>
+            <p>
+                As atrações de Busan vão desde templos budistas centenários que pontilham as montanhas e o litoral da cidade até praias imaculadas com águas cristalinas. Esta cidade litorânea tem muitas coisas para fazer o ano todo - as famílias podem passar o tempo em um aquário à beira-mar, os compradores podem explorar bairros vibrantes e os amantes da natureza podem desfrutar de longas caminhadas até mirantes panorâmicos. Os santuários budistas que pontilham a costa e as montanhas de Busan têm uma arquitetura impressionante que irá encantar os fotógrafos. 
+            </p>
+
+            <article>
+                <img src="assets/templo-haedong-yonggungsa.jpg" alt="Templo Haedong Yonggungsa em Busan, Coreia do Sul, localizado à beira-mar, com sua arquitetura tradicional coreana cercada por penhascos rochosos e vegetação. A cena destaca o templo contrastando com o oceano ao fundo, criando uma atmosfera de tranquilidade e beleza natural.">
+
+                <h3>1. Templo Haedong Yonggungsa</h3>
+                <p>
+                    O Templo Haedong Yonggungsa é um templo budista localizado no extremo nordeste de Busan. Construído em 1376, é um dos poucos templos na Coreia construídos à beira-mar, você pode desfrutar de vistas do Mar do Leste de um lado e de belas montanhas do outro. 
+                </p>
+
+                <span>Bom para:</span>
+                <ul>
+                    <li><span class="history">História</span></li>
+                </ul>
+            </article>
+
+            <article>
+                <img src="assets/templo-beomeo-sa.jpg" alt="Templo Beomeo-sa em Busan, Coreia do Sul, com sua arquitetura tradicional coreana, incluindo telhados ornamentados e detalhes coloridos. Ao fundo, uma colina arborizada repleta de vegetação, destacando a integração do templo com a natureza ao redor.">
+
+                <h3>2. Templo Beomeo-sa</h3>
+                <p>
+                    O Templo Beomeo-sa é um dos maiores santuários da Coreia do Sul. Ele está localizado no alto da borda leste da montanha Geumjeongsa e fica distante da agitação da cidade. O Daeungjeon Hall do templo é um exemplo bem preservado da arquitetura da Dinastia Joseon.
+                </p>
+
+                <span>Bom para:</span>
+                <ul>
+                    <li><span class="history">História</span></li>
+                </ul>
+            </article>
+
+            <article>
+                <img src="assets/parque-yongdusan.jpg" alt="Vista do Parque Yongdusan em Busan, Coreia do Sul, com um pavilhão tradicional coreano à esquerda e uma paisagem de árvores podadas e caminhos pavimentados ao centro, emoldurados por vegetação exuberante e edifícios modernos ao fundo.">
+
+                <h3>3. Parque Yongdusan</h3>
+                <p>
+                    O Parque Yongdusan, localizado no centro de Busan, abriga alguns dos monumentos mais importantes da cidade. Você pode ver vistas espetaculares do topo da Torre Busan, de 120 metros de altura. O parque tem 2 museus – confira os instrumentos musicais tradicionais no Museum of World Folk Instruments e mais de 80 veleiros coreanos no Exhibition Hall of World Model Boats.
+                </p>
+
+                <span>Bom para:</span>
+                <ul>
+                    <li><span id="couple">Casais</span></li>
+                    <li><span id="family">Família</span></li>
+                    <li><span id="budget">Orçamento</span></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            As melhores coisas para fazer em Busan mostram a reputação da cidade como um importante porto marítimo na Ásia. Frequentemente vista como a essência da Coreia do Sul, você experimentará uma atmosfera única em termos de diversidade étnica e cultural, já que a cidade recebe um público cosmopolita o ano todo. 
+        </p>
+
+        <div>
+            <span>Feito com</span>
+            <img src="assets/heart.svg" alt="coração">
+            <span>pela Rocketseat</span>
+        </div>
+    </footer>
 </body>
 </html>

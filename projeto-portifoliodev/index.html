@@ -12,51 +12,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="head grid grid-flow-col"  id="intro">
-        <div id="info">
-
-            <div id="user">
-                <img src="https://avatars.githubusercontent.com/u/182786006?v=4" alt="Foto de perfil de Felipe Andrigo Rossi">
+    <header class="header">
+        <div class="container">
+            <div class="profile">
+                <img class="photo" src="https://avatars.githubusercontent.com/u/182786006?v=4" alt="Foto de perfil de Felipe Andrigo Rossi">
                 <img src="assets/icons/Vector.png" alt="">
             </div>
-            <div id="description grid-flow-col">
-                <h2>Hello World! Meu nome é  <span id="name">Felipe Andrigo Rossi</span> e sou</h2>
+            
+            <div class="occupation">
+                <span>Hello World! Meu nome é  <strong>Felipe Andrigo Rossi</strong> e sou</span>
                 <h1>Desenvolvedor Fullstack</h1>
-                <h3>
-                    Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da<br> minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.
-                </h3>
+                <p>
+                    Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.
+                </p>
             </div>
-            <div class="grid grid-flow-col">
-                <div class="icon" id="github">
-                    <img class="vector" id="gitcolor" src="assets/icons/GitHub.svg" alt="">
-                    <p>GitHub</p>
-                </div>
-                <div class="icon" id="html">
-                    <img class="vector" id="html-color" src="assets/icons/HTML.svg" alt="">
-                    <p>HTML</p>
-                </div>
-                <div class="icon" id="css">
-                    <img class="vector" id="css-color" src="assets/icons/CSS.svg" alt="">
-                    <p>CSS</p>
-                </div>
-                <div class="icon" id="js">
-                    <img class="vector" id="js-color" src="assets/icons/JavaScript.svg" alt="">
-                    <p>JavaScript</p>
-                </div>
-                <div class="icon" id="react">
-                    <img class="vector" id="react-color" src="assets/icons/React.svg" alt="">
-                    <p>React</p>
-                </div>
-                <div class="icon" id="node">
-                    <img class="vector" id="node-color" src="assets/icons/Node.js.svg" alt="">
-                    <p>Node.js</p>
-                </div>
-            </div>
+            
+            <ul class="skills">
+                <li>
+                    <img src="assets/icons/HTML.svg" alt="Ícone HTML">
+                    <span>HTML</span>
+                </li>
+                <li>
+                    <img src="assets/icons/CSS.svg" alt="Ícone CSS">
+                    <span>CSS</span>
+                </li>
+                <li>
+                    <img src="assets/icons/JavaScript.svg" alt="Ícone JavaScript">
+                    <span>JavaScript</span>
+                </li>
+                <li>
+                    <img src="assets/icons/GitHub.svg" alt="Ícone Github">
+                    <span>GitHub</span>
+                </li>
+                <li>
+                    <img src="assets/icons/React.svg" alt="Ícone React">
+                    <span>React</span>
+                </li>
+                <li>
+                    <img src="assets/icons/Node.js.svg" alt="Ícone Node js">
+                    <span>Node.js</span>
+                </li>
+            </ul>
+
+            <a class="scroll" href="#projects">
+                <img src="assets/icons/CaretDoubleDown.svg" alt="rolar para conteúdo principal">
+            </a>
         </div>
     </header>
-    <div id="caretdoubledown">
-        <img src="assets/icons/CaretDoubleDown.svg" alt="">
-    </div>
+   
     <main>
         <div id="projects">
             <div class="grid">

@@ -1,0 +1,119 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 100vh;
+    background: url("../assets/Background_Intro.png") no-repeat center/cover;
+
+    padding-block: 7.25rem 3.75rem;
+}
+
+.profile {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+
+    background-color: var(--gray-200);
+    border: 0.125rem solid var(--red);
+    border-radius: 50%;
+
+    padding: 0.25rem;
+
+    .photo {
+        width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    img:nth-child(2) {
+        position: absolute;
+        bottom: -0.625rem;
+        left: 66%;
+    }
+}
+
+.occupation {
+    max-width: 42.5rem;
+    margin: 3.5rem auto 5rem;
+
+    span {
+        color: var(--gray-500);
+        font: var(--subtitle);
+
+        strong {
+            color: var(--red);
+            font-weight: 400;
+        }
+    }
+
+    h1 {
+        color: var(--gray-600);
+        font: var(--title-lg);
+        margin-block: 0.5rem 1.25rem;
+    }
+
+    p {
+       color: var(--gray-400);
+    }
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    margin-bottom: 6.125rem;
+    padding-inline: 1.25rem;
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        background-color: var(--gray-300);
+        border-radius: 5rem;
+        color: var(--gray-500);
+
+        font: var(--text-md);
+        padding: 0.5rem 1rem;
+        transition: filter 0.3s;
+        &:hover {
+            filter: brightness(1.2);
+        }
+
+        img {
+            width: 1.5rem;
+        }
+    }
+}
+
+.scroll {
+    transition: scale 0.3s ease-in-out;
+    &:hover {
+        scale: 1.2;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .occupation {
+        padding-inline: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .occupation {
+        margin-block: 3.5rem;
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    .skills {
+        padding-inline: 0;
+        flex-direction: column;
+    }
+}

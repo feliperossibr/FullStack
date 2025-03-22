@@ -1,25 +1,27 @@
+@import url(utility.css);
+
 * {
-    
     margin: 0;
+    border: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 :root {
     /* Principal */
-    --principal-color-red: #E3646E;
-    --principal-color-purple: #BB72E9;
-    --principal-color-blue: #3996DB;
-    --principal-color-green: #82BC4F;
-    --principal-color-yellow: #EABD5F;
+    --red: #E3646E;
+    --purple: #BB72E9;
+    --blue: #3996DB;
+    --green: #82BC4F;
+    --yellow: #EABD5F;
 
     /* Base */
-    --color-gray-100: #0D0E11;
-    --color-gray-200: #16181D;
-    --color-gray-300: #292C34;
-    --color-gray-400: #878EA1;
-    --color-gray-500: #C0C4CE;
-    --color-gray-600: #E2E4E9;
+    --gray-100: #0D0E11;
+    --gray-200: #16181D;
+    --gray-300: #292C34;
+    --gray-400: #878EA1;
+    --gray-500: #C0C4CE;
+    --gray-600: #E2E4E9;
 
     /* Font Family Asap */
     --font-family-title: "Asap", serif;

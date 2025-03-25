@@ -55,7 +55,7 @@
           </div>
 
           <div class="textarea-wrapper">
-            <label for="medical-info">informações Médicas</label>
+            <label for="medical-info">informações médicas</label>
             <textarea 
             name="medical-info" 
             id="medical-info"
@@ -67,7 +67,7 @@
 
           <div class="droparea-wrapper">
 
-            <label for="birth-file">Certidão de Nascimento</label>
+            <label for="birth-file">Certidão de nascimento</label>
             
             <div class="dropzone">
               <input type="file" id="birth-file" name="birth-file">
@@ -140,6 +140,30 @@
             <div class="error">
               <img src="assets/icons/alert-circle.svg" alt="ícone de alerta vermelho">
               <span>Insira um e-mail válido</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="enroll-options">
+          <legend>Opções de Matrícula</legend>
+
+          <div class="input-wrapper">
+            <label>Selecione o turno de estudo</label>
+
+            <div class="radio-wrapper">
+              <div class="radio-inner">
+                <div class="radio-image"></div>
+                <input type="radio" name="study-shift" value="morning" id="morning">
+                <img src="assets/icons/sun-cloud-02.svg" alt="ícone de sol com nuvem">
+                <label for="morning">Manhã</label>
+              </div>
+
+              <div class="radio-inner">
+                <div class="radio-image"></div>
+                <input type="radio" name="study-shift" value="evening" id="evening">
+                <img src="assets/icons/sun-02.svg" alt="ícone de sol da tarde">
+                <label for="evening">tarde</label>
+              </div>
             </div>
           </div>
         </fieldset>

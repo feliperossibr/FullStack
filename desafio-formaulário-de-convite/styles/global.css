@@ -6,10 +6,18 @@
 
 :root {
         /*  Typography */
-  --font-logo:"Leckerli One", cursive;
+  --font-family-logo:"Leckerli One", cursive;
+  --font-logo: 400 2.5rem/1 var(--font-family-logo);
 
-  --font-head: "Baloo 2", sans-serif;
-  --text-head-md: 700 28px/100% var(--font-head);
+  --font-family-head: "Baloo 2", sans-serif;
+  --text-head-md: 700 28px/100% var(--font-family-head);
+  --text-head-sm: 700 1.75rem/1 var(--font-family-head);
+
+  --font-family-body: "Open Sans", sans-serif;
+  --font-body-md: 400 1rem/1 var(--font-family-body);
+  --font-body-sm: 400 .875rem/1 var(--font-family-body);
+  --font-body-xs: 400 .75rem/1 var(--font-family-body);
+  
 
 
         /*  Brand  */
@@ -45,4 +53,9 @@
         /*  Text  */
   --text-body: #C8CDD0;
   --text-heading: #F9F9F9;
+}
+
+p {
+      font: var(--font-logo);
+      color: var(--pink);
 }

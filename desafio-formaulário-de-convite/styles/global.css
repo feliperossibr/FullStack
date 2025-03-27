@@ -15,6 +15,7 @@
 
   --font-family-body: "Open Sans", sans-serif;
   --font-body-md: 400 1rem/1 var(--font-family-body);
+  --font-body-mdl: 100 1rem/1 var(--font-family-body);
   --font-body-sm: 400 .875rem/1 var(--font-family-body);
   --font-body-xs: 400 .75rem/1 var(--font-family-body);
   
@@ -55,7 +56,29 @@
   --text-heading: #F9F9F9;
 }
 
-p {
+body {
+      overflow: hidden;
+
+      background-color: var(--shape-background);
+      color: var(--text-heading);
+}
+
+h1 {
       font: var(--font-logo);
       color: var(--pink);
+}
+
+img {
+      max-width: 100%;
+      height: auto;
+}
+
+p {
+      font: var(--font-body-mdl);
+      color: var(--text-heading);
+      
+}
+
+.flex {
+      display: flex;
 }

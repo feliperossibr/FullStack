@@ -18,6 +18,10 @@ aside {
 
   background-color: var(--shape-body);
   background-image: url(../assets/images/Background.png);
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  
 
   & .aside-container {
     max-width: 25rem;

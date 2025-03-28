@@ -1,0 +1,74 @@
+.text-heading {
+  color: var(--text-heading);
+}
+
+.text-body {
+  color: var(--text-body);
+}
+
+.gap-16 {
+  gap: 1rem;
+}
+
+.gap-28 {
+  gap: 1.75rem;
+}
+
+.mb-4 {
+  margin-bottom: .25rem;
+}
+.mb-12{
+  margin-bottom: .75rem;
+}
+
+.mb-16{
+  margin-bottom: 1rem;
+}
+
+.mb-32{
+  margin-bottom: 2rem;
+}
+
+.brand-light{
+  background-color: var(--brand-light);
+}
+
+.navy{
+  background-color: var(--navy);
+}
+
+.purple{
+  background-color: var(--purple);
+}
+
+.fuchsia{
+  background-color: var(--fuchsia);
+}
+
+.pink{
+  background-color: var(--pink);
+}
+
+.danger{
+  background-color: var(--danger);
+}
+
+.orange{
+  background-color: var(--orange);
+}
+
+.yellow{
+  background-color: var(--yellow);
+}
+
+.lime{
+  background-color: var(--lime);
+}
+
+.green{
+  background-color: var(--green);
+}
+
+.cyan{
+  background-color: var(--cyan);
+}

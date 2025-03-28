@@ -6,32 +6,54 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crie seu convite</title>
-
-  <link rel="stylesheet" href="styles/index.css">
+  <title>Festivite | Formulário de Convite</title>
+  <link rel="shortcut icon" href="assets/icons/Logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="styles/global.css">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="app">
-    <aside>
-      <div class="aside-container">
-        <header>
+    <aside class="aside">
           <img src="assets/icons/Logo.svg" alt="logo de festa colorido">
-          <h1>
-            Festivite
-          </h1>
-          <p>
-            Crie um convite digital para o seu evento
-          </p>
-        </header>
-  
-        
-      </div>
+          <strong class="logo">Festivite</strong>
+          <p class="text-heading">Crie um convite digital para o seu evento</p>
     </aside>
 
-    <main>
-      <div  class="main-container">
+    <main class="main">
+      <div  class="container">
+        <h1 class="text-heading">Crie seu convite</h1>
 
+        <form class="form" method="post" enctype="multipart/form-data"></form>
+          <fieldset id="about-event">
+            <legend class="legend text-heading">
+              <img src="assets/icons/calendar.svg" alt="">
+              Sobre o evento
+            </legend>
+
+        
+          
+            <div class="input-wrapper">
+              <label for="eventname"></label>
+              <input
+                name="Título"
+                id="eventname" 
+                type="text"
+                placeholder="Nome do evento">
+            </div>
+
+            <div class="flex">
+              <div class="input-wrapper flex-2">
+                <label for="street">Início</label>
+                <input type="datetime-local" id="start" name="start">
+              </div>
+            
+              <div class="input-wrapper flex-1">
+                <label for="number">Fim</label>
+                <input type="datetime-local" id="end" name="end">
+              </div>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </main>
   </div>

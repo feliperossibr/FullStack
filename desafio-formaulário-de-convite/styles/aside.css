@@ -1,0 +1,29 @@
+.aside {
+  background: url(../assets/images/Background.png) no-repeat center/cover;
+  border-radius: .75rem;
+  height: calc(100vh - 2.5rem);
+  padding: 2rem;
+
+  grid-area: aside;
+  position: sticky;
+  top: 1.25rem;
+
+  .logo {
+    display: block;
+    margin-block: 1rem .5rem;
+    font: var(--logo);
+    color: var(--pink);
+  }
+
+  p.text-heading {
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .aside {
+    position: static;
+    background-position: top;
+    text-align: center;
+  }
+}

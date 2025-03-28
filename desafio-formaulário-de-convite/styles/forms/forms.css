@@ -1,0 +1,21 @@
+@import url(input.css);
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+
+  margin-bottom: 1.5rem;
+  font: var(--heading-sm);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}

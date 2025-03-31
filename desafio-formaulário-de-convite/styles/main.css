@@ -1,0 +1,25 @@
+.main {
+  background-color: var(--shape-body);
+  border-radius: .75rem;
+  grid-area: main;
+
+  width: 100%;
+  padding-block: 5rem;
+}
+
+
+.container {
+  max-width: 35rem;
+  margin-inline: auto;
+
+  h1 {
+    font: var(--heading-md);
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .main {
+    padding-inline: 1.25rem;
+  }
+}

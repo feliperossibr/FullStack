@@ -271,14 +271,132 @@
                   </div>
                 </div>
               </div>
+
+              <div class="input-wrapper">
+                <div class="input-group">
+                  <label class="text-body default-label mb-12">Estilo</label>
+
+                  <div class="switch-wrapper">
+                    <input type="checkbox" name="style" id="style" value="Escuro">
+                    <label class="text-heading default-label" for="style" id="style-label">Escuro</label>
+                  </div>
+                </div>
+
+                <div class="input-group">
+                  <label class="text-body default-label mb-12">Foto de capa</label>
+
+                  <div class="file-wrapper">
+                    <div class="file-content">
+                      <input type="file" name="photo" id="photo" required>
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64645 1.64645C7.84171 1.45118 8.15829 1.45118 8.35355 1.64645L11.6869 4.97978C11.8821 5.17504 11.8821 5.49162 11.6869 5.68689C11.4916 5.88215 11.175 5.88215 10.9798 5.68689L8.5 3.20711V10C8.5 10.2761 8.27614 10.5 8 10.5C7.72386 10.5 7.5 10.2761 7.5 10V3.20711L5.02022 5.68689C4.82496 5.88215 4.50838 5.88215 4.31311 5.68689C4.11785 5.49162 4.11785 5.17504 4.31311 4.97978L7.64645 1.64645ZM2 9.5C2.27614 9.5 2.5 9.72386 2.5 10V12.6667C2.5 12.8877 2.5878 13.0996 2.74408 13.2559C2.90036 13.4122 3.11232 13.5 3.33333 13.5H12.6667C12.8877 13.5 13.0996 13.4122 13.2559 13.2559C13.4122 13.0996 13.5 12.8877 13.5 12.6667V10C13.5 9.72386 13.7239 9.5 14 9.5C14.2761 9.5 14.5 9.72386 14.5 10V12.6667C14.5 13.1529 14.3068 13.6192 13.963 13.963C13.6192 14.3068 13.1529 14.5 12.6667 14.5H3.33333C2.8471 14.5 2.38079 14.3068 2.03697 13.963C1.69315 13.6192 1.5 13.1529 1.5 12.6667V10C1.5 9.72386 1.72386 9.5 2 9.5Z" fill="#869198"/>
+                      </svg>
+                      <label class="text-heading" for="photo">Selecionar</label>
+                    </div>
+                    <span id="file-message">Nenhum arquivo selecionado</span>
+                  </div>
+                  <small id="error">
+                    <img src="assets/icons/circle-alert.svg" alt="">
+                    Insira um arquivo correto
+                  </small>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset id="contact">
+            <legend class="legend text-heading">
+              <img src="assets/icons/contact.svg" alt="">
+              Dados para contato
+            </legend>
+
+            <div class="form-container gap-16">
+              <div class="input-group">
+                <label class="text-body default-label mb-12" for="name">Nome</label>
+                <input
+                  class="default-input input input-padding" 
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Nome completo"
+                  required
+                >
+                <small id="error">
+                  <img src="assets/icons/circle-alert.svg" alt="">
+                  Insira um nome completo correto
+                </small>
+              </div>
+
+              <div class="input-wrapper mb-32">
+                <div class="input-group">
+                  <label class="text-body default-label mb-12" for="email">E-mail</label>
+                  <input
+                    class="default-input input-padding" 
+                    type="email" 
+                    name="email"  
+                    id="email"
+                    placeholder="exemplo@email.com"
+                    required
+                  >
+                  <small id="error">
+                    <img src="assets/icons/circle-alert.svg" alt="">
+                    Insira um E-mail correto
+                  </small>
+                </div>
+
+                <div class="input-group">
+                  <label class="text-body default-label mb-12" for="tel">Telefone</label>
+                  <input
+                    class="default-input input-padding" 
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    placeholder="(99) 99999-9999"
+                    required
+                  >
+                  <small id="error">
+                    <img src="assets/icons/circle-alert.svg" alt="">
+                    Insira um telefone correto
+                  </small>
+                </div>
+              </div>
+
+              <div class="checkbox-wrapper">
+                <div class="checkbox-group">
+                  <input type="checkbox" name="terms" id="terms" value="terms">
+                  <label class="text-body default-label" for="terms">
+                    Li e concordo com os <a href="#!">Termos e Condições</a> e com a <a href="#!">Política de Privacidade</a>
+                  </label>
+                </div>
+
+                <div class="checkbox-group">
+                  <input type="checkbox" name="promotions-email" id="promotions-email" value="promotions-email">
+                  <label class="text-body default-label" for="promotions-email">
+                    Aceito receber atualizações e promoções por e-mail
+                  </label>
+                </div>
+
+                <div class="checkbox-group">
+                  <input type="checkbox" name="promotions-sms" id="promotions-sms" value="promotions-sms">
+                  <label class="text-body default-label" for="promotions-sms">
+                    Aceito receber atualizações e promoções por SMS
+                  </label>
+                </div>
+              </div>
             </div>
 
-
-
+            <button class="submit" type="submit">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.71284 4.21284C2.14261 3.78307 2.7255 3.54163 3.33329 3.54163H16.6666C17.2744 3.54163 17.8573 3.78307 18.2871 4.21284C18.7168 4.64261 18.9583 5.2255 18.9583 5.83329V7.49996C18.9583 7.84514 18.6785 8.12496 18.3333 8.12496C17.836 8.12496 17.3591 8.3225 17.0075 8.67413C16.6558 9.02576 16.4583 9.50268 16.4583 9.99996C16.4583 10.4972 16.6558 10.9742 17.0075 11.3258C17.3591 11.6774 17.836 11.875 18.3333 11.875C18.6785 11.875 18.9583 12.1548 18.9583 12.5V14.1666C18.9583 14.7744 18.7168 15.3573 18.2871 15.7871C17.8573 16.2168 17.2744 16.4583 16.6666 16.4583H3.33329C2.7255 16.4583 2.14261 16.2168 1.71284 15.7871C1.28307 15.3573 1.04163 14.7744 1.04163 14.1666V12.5C1.04163 12.1548 1.32145 11.875 1.66663 11.875C2.16391 11.875 2.64082 11.6774 2.99245 11.3258C3.34408 10.9742 3.54163 10.4972 3.54163 9.99996C3.54163 9.50268 3.34408 9.02576 2.99245 8.67413C2.64082 8.3225 2.16391 8.12496 1.66663 8.12496C1.32145 8.12496 1.04163 7.84514 1.04163 7.49996V5.83329C1.04163 5.2255 1.28307 4.64261 1.71284 4.21284ZM11.4583 15.2083V14.1666C11.4583 13.8214 11.1785 13.5416 10.8333 13.5416C10.4881 13.5416 10.2083 13.8214 10.2083 14.1666V15.2083H3.33329C3.05703 15.2083 2.79207 15.0985 2.59672 14.9032C2.40137 14.7078 2.29163 14.4429 2.29163 14.1666V13.0618C2.88753 12.9402 3.43985 12.6462 3.87633 12.2097C4.46239 11.6236 4.79163 10.8288 4.79163 9.99996C4.79163 9.17116 4.46239 8.3763 3.87633 7.79025C3.43985 7.35376 2.88753 7.05973 2.29163 6.93808V5.83329C2.29163 5.55703 2.40137 5.29207 2.59672 5.09672C2.79207 4.90137 3.05703 4.79163 3.33329 4.79163H10.2083V5.83329C10.2083 6.17847 10.4881 6.45829 10.8333 6.45829C11.1785 6.45829 11.4583 6.17847 11.4583 5.83329V4.79163H16.6666C16.9429 4.79163 17.2078 4.90137 17.4032 5.09672C17.5985 5.29207 17.7083 5.55703 17.7083 5.83329V6.93808C17.1124 7.05973 16.5601 7.35376 16.1236 7.79025C15.5375 8.3763 15.2083 9.17116 15.2083 9.99996C15.2083 10.8288 15.5375 11.6236 16.1236 12.2097C16.5601 12.6462 17.1124 12.9402 17.7083 13.0618V14.1666C17.7083 14.4429 17.5985 14.7078 17.4032 14.9032C17.2078 15.0985 16.9429 15.2083 16.6666 15.2083H11.4583ZM10.8333 8.54163C11.1785 8.54163 11.4583 8.82145 11.4583 9.16663V10.8333C11.4583 11.1785 11.1785 11.4583 10.8333 11.4583C10.4881 11.4583 10.2083 11.1785 10.2083 10.8333V9.16663C10.2083 8.82145 10.4881 8.54163 10.8333 8.54163Z" fill="white"/>
+              </svg>
+              Gerar convite
+            </button>
           </fieldset>
         </form>
       </div>
     </main>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

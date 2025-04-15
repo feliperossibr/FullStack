@@ -36,7 +36,7 @@ formList.addEventListener("submit", (event) => {
   }
 });
 
-function createNewItem(id, inputValue, inputChecked) {\
+function createNewItem(id, inputValue, inputChecked) {
   let newItem = document.createElement("li");
   newItem.innerHTML += `
     <div>

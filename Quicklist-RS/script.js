@@ -1,5 +1,5 @@
 const formList = document.querySelector("#formList");
-const newitemInput = document.querySelector("#newItemInput");
+const newItemInput = document.querySelector("#newItemInput");
 const shoppingList = document.querySelector("#shoppingList")
 const message = document.querySelector("#alert");
 const closeMessage = document.querySelector("#closeAlert");
@@ -24,15 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
 formList.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  if (newitemInput.value !== "") {
-    createNewItem(itemId, newitemInput.value, false);
+  if (newItemInput.value !== "") {
+    createNewItem(itemId, newItemInput.value, false);
     itemId += 1;
 
-    newitemInput.value = "";
-    newitemInput.focus();
+    newItemInput.value = "";
+    newItemInput.focus();
 
   } else {
-    alert("Oitem deve possuir um nome!")
+    alert("Oitem deve possuir um nome!");
   }
 });
 
@@ -40,16 +40,15 @@ function createNewItem(id, inputValue, inputChecked) {
   let newItem = document.createElement("li");
   newItem.innerHTML += `
     <div>
-      <input type="checkbox" name="checkboxItem" id=${"checkboxItem" + id}
-      ${inputChecked ? "checked" : ""}>
+      <input type="checkbox" name="checkboxItem" id=${"checkboxItem" + id} ${inputChecked ? "checked" : ""}>
       <label for=${"checkboxItem" + id}>${inputValue}</label>
     </div> 
   `;
   newItem.classList.add("shoppingItem");
   newItem.id = id;
 
-  let btnitem = document.createElement("button");
-  btnitem.innerHTML += `
+  let btnItem = document.createElement("button");
+  btnItem.innerHTML += `
     <img src="assets/icons/delete.svg" alt="">
   `;
   btnItem.setAttribute("aria-label", "Deletar item");

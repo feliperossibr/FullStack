@@ -35,3 +35,68 @@ formList.addEventListener("submit", (event) => {
     alert("Oitem deve possuir um nome!")
   }
 });
+
+function createNewItem(id, inputValue, inputChecked) {\
+  let newItem = document.createElement("li");
+  newItem.innerHTML += `
+    <div>
+      <input type="checkbox" name="checkboxItem" id=${"checkboxItem" + id}
+      ${inputChecked ? "checked" : ""}>
+      <label for=${"checkboxItem" + id}>${inputValue}</label>
+    </div> 
+  `;
+  newItem.classList.add("shoppingItem");
+  newItem.id = id;
+
+  let btnitem = document.createElement("button");
+  btnitem.innerHTML += `
+    <img src="assets/icons/delete.svg" alt="">
+  `;
+  btnItem.setAttribute("aria-label", "Deletar item");
+  btnItem.onclick = () => deleteItem(id);
+
+  newItem.appendChild(btnItem);
+  shoppingList.append(newItem);
+
+  list.push({
+    id,
+    name: inputValue,
+    checked: inputChecked,
+  });
+
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+
+  const checkbox = newItem.children[0].children[0];
+  checkbox.addEventListener("change", (e) => onChecked(id, e.target.checked));
+}
+
+function onChecked(id, checked) {
+  const idx = list.findIndex(item => item.id === id);
+
+  if(idx !== -1) {
+    list[idx].checked = checked;
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+  }
+}
+
+function deleteItem(id) {
+  if(timeoutId) {
+    clearTimeout(timeoutId);
+  }
+
+  document.getElementById(id).remove();
+
+  const newList = list.filter(item => item.id !== id);
+  list = newList;
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+
+  message.style.display = "flex";
+
+  timeoutId = setTimeout(() => {
+    message.style.display = "none";
+  }, 2500);
+}
+
+closeMessage.addEventListener("click", () => {
+  message.style.display = "none"
+});

@@ -14,7 +14,7 @@ footer {
   & nav.even-columns {
     gap: 4rem;
   }
-
+  
   & .top ul {
     align-content: start;
   }

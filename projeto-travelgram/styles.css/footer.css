@@ -1,11 +1,22 @@
-footer {
+footer{
     display: flex;
-    gap: 24px;
-    padding-block: 24px;
+    gap: 1.5rem;
+    padding-block: 1.5rem;
+  
+    font: .875rem/150% var(--font-family);
+  
+    & span:nth-child(1){
+      margin-right: auto;
+    }
+  }
 
-    font: 14px/150% var(--font-family);
-}
-
-footer span:nth-child(1) {
-    margin-right: auto;
-}
+@media screen and (max-width: 510px) {
+    footer{
+      flex-direction: column;
+      text-align: center;
+  
+      & span:nth-child(1){
+        margin: 0;
+      }
+    }
+  }

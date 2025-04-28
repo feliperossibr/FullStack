@@ -23,25 +23,40 @@
 body {
     color: var(--text-color-secondary);
     background-color: var(--backgorund-color);
+    font: var(--text);
 }
 
 a {
     text-decoration: none;
     color: inherit;
+
+    &:hover {
+        color: var(--brand-color);
+        text-decoration: underline;
+    }
 }
 
-a:hover {
-    color: var(--brand-color);
-    text-decoration: underline;
+ul {
+    list-style: none;
 }
 
 .container {
-    padding-inline: 32px;
-    max-width: 1280px;
+    padding-inline: 2rem;
+    width: min(100%, 80rem);
     margin-inline: auto;
 }
 
 .bg-surface-color {
     background-color: var(--surface-color);
+}
+
+.desktop-only {
+    display: initial;
+}
+
+@media screen and (width <= 37.5em) {
+    .desktop-only {
+        display: none;
+    }
 }
 
